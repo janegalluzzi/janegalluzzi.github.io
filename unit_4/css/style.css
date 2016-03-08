@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+h3	{
+	font-family: 'Satisfy', cursive;
+	font-size: 40px;
+	line-height: 1.5em;
+	margin: 2em;
+	text-align: center;
+	color: red;
+}
+
+h4	{
+	text-align: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+#problem	{
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.5em;
+	color: black;
+	margin: 6em;
+}
