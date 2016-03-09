@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+body {
+	background-color: red;
+}
+
+h2	{
+	font-family: 'Satisfy', cursive;
+	font-size: 40px;
+	line-height: 1.5em;
+	margin: 2em;
+	text-align: center;
+	color: white;
+	background: red;
+	background-size: cover;
+}
+
+h4	{
+	text-align: center;
+}
+
+#quote {
+	width: 100%;
+}
+
+#mission {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.5em;
+	color: white;
+/*	margin: 6em;*/
+	background: url("../images/studying.jpg") no-repeat center center fixed;
+	background-size: cover;
+	height: 600px;
+	position: relative;
+}
+
+#blog, #events {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.5em;
+	color: white;
+	margin: 6em;
+	background: red;
+	background-size: cover;
+}
+
+#hero {
+	background: url("../images/hug.jpg") no-repeat center center fixed;
+	background-size: cover;
+	height: 600px;
+	position: relative;
+}
+
+#header {
+	background-color: red;
+	position: fixed;
+	top: 20px;
+	width: 100%;
+	left: 0;
+}
+
+#events {
+
+}
+
+#bottomnav {
+
+}
