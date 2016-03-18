@@ -1,11 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Satisfy);
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
-/*@font-face url {font-family: 'thirstyroughboltwo';
-	src: url(../fonts/Yellow Design Studio - ThirstyRoughBolTwo.otf)
-}*/
+@font-face {
+	font-family: 'Thirsty';
+	src: url(../fonts/ThirstyRoughBolTwo.otf)
+}
+
+body {
+		background: #ed1849;
+}
 
 h2	{
-	font-family: 'ThirstyRoughBolTwo', cursive;
+	font-family: 'Thirsty', cursive;
 	font-size: 40px;
 	line-height: 1.5em;
 	text-align: center;
@@ -19,10 +24,12 @@ h4	{
 
 #quote {
 	width: 100%;
-	background: url("../images/red page tear.png") no-repeat center center;
-	height: 300px;
+	background: url("../images/red page tear.png") no-repeat bottom center;
 	background-size: cover;
 	background-color: transparent;
+	position: relative;
+	z-index: 2;
+	padding: 40px 0 80px; 
 }
 
 #mission {
@@ -33,10 +40,16 @@ h4	{
 	color: white;
 /*	margin: 6em;*/
 /*	overflow: auto;*/
-	background: url("../images/homework.jpg") no-repeat center center fixed;
+	background: url("../images/homework.jpg") no-repeat center center scroll;
 	background-size: cover;
 	height: 250px;
 	position: relative;
+	top: -60px;
+	padding-top: 80px;
+}
+
+#mission a {
+	background-color: rgba(0,0,0,0);
 }
 
 #blog, #events {
@@ -63,15 +76,42 @@ h4	{
 	position: relative;
 }
 
-#header {
+/*@
+element selectors
+classes
+id's
+media queries*/
+
+
+header{
+	position: relative;
+}
+
+header img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+nav{
 	background-color: #ed1849;
 	position: fixed;
-	text-align: right;
 	top: 20px;
 	width: 100%;
 	left: 0;
-	word-spacing: 5px;
+	z-index: 3;
 }
+
+ul{
+	float: right;
+}
+
+nav li, 
+nav li a{
+	display: inline-block;
+}
+
 
 a {
 	font-family: 'Lato', sans-serif;
@@ -79,7 +119,7 @@ a {
 	color: white;
 	text-decoration: none;
 	display: block;
-	float: right;
+	/*float: right;*/
 	padding: 10px;
 }
 
@@ -99,4 +139,19 @@ a:hover {
 
 footer {
 	clear: both;
+}
+
+.blogpreview {
+	width: 300px;
+	margin: 20px;
+	float: left;
+}
+
+.clearfix:after {
+	display: block;
+	content: "hello";
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+	height: 0;
 }
