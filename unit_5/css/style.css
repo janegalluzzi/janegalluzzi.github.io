@@ -4,9 +4,11 @@
 	font-family: 'Thirsty';
 	src: url(../fonts/ThirstyRoughBolTwo.otf)
 }
-
+* { margin:0; padding:0; box-sizing:border-box; }
 body {
-		background: #ed1849;
+	background: #ed1849;
+	font-size:16px;
+	font-family: 'Lato', sans-serif;
 }
 
 h2	{
@@ -22,6 +24,73 @@ h4	{
 	text-align: center;
 }
 
+/*@
+element selectors
+classes
+id's
+media queries*/
+
+
+header{
+	position: fixed;
+	top: 20px;
+	width: 100%;
+	left: 0;
+	z-index: 3;
+}
+
+header img {
+	float:left;
+}
+
+nav{
+	background-color: #ed1849;
+}
+
+
+a {
+	background-color: #ed1849;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	/*float: right;*/
+	padding: .5em;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+section a {
+	background-color: rgba(0,0,0,0);
+	border:2px solid;
+	padding:1em 2em;
+}
+section a:hover {
+	background-color:#ed1849;
+	border:2px solid #ed1849;
+	color:#fff;
+	text-decoration:none;
+}
+
+footer {
+	clear: both;
+}
+#blog section {
+	float: left;
+	width: 31.33%;
+	padding: 4em 0;
+	background-color: #85243A;
+	margin: 1%;
+}
+#bottomnav {
+	background-color: #ed1849;
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	word-spacing: 5px;
+	clear: both;
+}
 #quote {
 	width: 100%;
 	background: url("../images/red page tear.png") no-repeat bottom center;
@@ -33,7 +102,6 @@ h4	{
 }
 
 #mission {
-	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	text-align: center;
 	line-height: 1.5em;
@@ -48,12 +116,7 @@ h4	{
 	padding-top: 80px;
 }
 
-#mission a {
-	background-color: rgba(0,0,0,0);
-}
-
 #blog, #events {
-	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	text-align: center;
 	line-height: 1.5em;
@@ -75,81 +138,9 @@ h4	{
 	height: 600px;
 	position: relative;
 }
-
-/*@
-element selectors
-classes
-id's
-media queries*/
-
-
-header{
-	position: relative;
-}
-
-header img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 10;
-}
-
-nav{
-	background-color: #ed1849;
-	position: fixed;
-	top: 20px;
-	width: 100%;
-	left: 0;
-	z-index: 3;
-}
-
-ul{
-	float: right;
-}
-
-nav li, 
-nav li a{
-	display: inline-block;
-}
-
-
-a {
-	font-family: 'Lato', sans-serif;
-	background-color: #ed1849;
-	color: white;
-	text-decoration: none;
-	display: block;
-	/*float: right;*/
-	padding: 10px;
-}
-
-a:hover {
-	color: black;
-	text-decoration: underline;
-}
-
-#bottomnav {
-	background-color: #ed1849;
-	display: inline-block;
-	float: left;
-	padding: 10px;
-	word-spacing: 5px;
-	clear: both;
-}
-
-footer {
-	clear: both;
-}
-
-.blogpreview {
-	width: 300px;
-	margin: 20px;
-	float: left;
-}
-
 .clearfix:after {
 	display: block;
-	content: "hello";
+	content: ".";
 	clear: both;
 	visibility: hidden;
 	font-size: 0;
