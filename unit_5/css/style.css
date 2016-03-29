@@ -1,20 +1,58 @@
+/*@
+element selectors
+classes
+id's
+media queries*/
+
 @import url(https://fonts.googleapis.com/css?family=Satisfy);
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Rochester);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,200,200italic,300italic,400italic,500italic,600italic);
+
 @font-face {
 	font-family: 'Thirsty';
 	src: url(../fonts/ThirstyRoughBolTwo.otf)
 }
+@font-face {
+	font-family: 'Univers';
+	src: url(../fonts/Univers)
+}
+@font-face{
+	font-family:'UniversBold';
+	src: url(../fonts/universbold.otf)
+}
+@font-face {
+	font-family: 'UniversLight';
+	src: url(../fonts/UniveLig)
+}
+
 * { margin:0; padding:0; box-sizing:border-box; }
+
 body {
 	background: #ed1849;
-	font-size:16px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+
+h1	{
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 50px;
+	line-height: 1.5em;
+	text-align: center;
+	color: white;
+	padding: .5em;
 }
 
 h2	{
-	font-family: 'Thirsty', cursive;
-	font-size: 40px;
+	font-family: 'Raleway';
+	text-transform: uppercase;
+	font-size: 30px;
 	line-height: 1.5em;
+	letter-spacing: 3px;
+	word-spacing: 1px;
 	text-align: center;
 	color: white;
 	background-size: cover;
@@ -23,13 +61,6 @@ h2	{
 h4	{
 	text-align: center;
 }
-
-/*@
-element selectors
-classes
-id's
-media queries*/
-
 
 header{
 	position: fixed;
@@ -44,28 +75,37 @@ header img {
 }
 
 nav{
-	background-color: #ed1849;
+/*	background-color: #ed1849;	*/
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: right;
+	padding: 15px;
 }
-
 
 a {
 	background-color: #ed1849;
 	color: white;
+	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	/*float: right;*/
 	padding: .5em;
+	margin: .5em;
 }
 
 a:hover {
 	color: black;
 	text-decoration: underline;
 }
+
 section a {
 	background-color: rgba(0,0,0,0);
 	border:2px solid;
 	padding:1em 2em;
 }
+
 section a:hover {
 	background-color:#ed1849;
 	border:2px solid #ed1849;
@@ -76,6 +116,7 @@ section a:hover {
 footer {
 	clear: both;
 }
+
 #blog section {
 	float: left;
 	width: 31.33%;
@@ -83,6 +124,16 @@ footer {
 	background-color: #85243A;
 	margin: 1%;
 }
+
+.clearfix:after {
+	display: block;
+	content: ".";
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+	height: 0;
+}
+
 #bottomnav {
 	background-color: #ed1849;
 	display: inline-block;
@@ -91,6 +142,7 @@ footer {
 	word-spacing: 5px;
 	clear: both;
 }
+
 #quote {
 	width: 100%;
 	background: url("../images/red page tear.png") no-repeat bottom center;
@@ -103,17 +155,13 @@ footer {
 
 #mission {
 	font-size: 20px;
-	text-align: center;
 	line-height: 1.5em;
 	color: white;
-/*	margin: 6em;*/
-/*	overflow: auto;*/
 	background: url("../images/homework.jpg") no-repeat center center scroll;
 	background-size: cover;
-	height: 250px;
 	position: relative;
 	top: -60px;
-	padding-top: 80px;
+	padding: 80px;
 }
 
 #blog, #events {
@@ -121,7 +169,6 @@ footer {
 	text-align: center;
 	line-height: 1.5em;
 	color: white;
-/*	margin: 6em;*/
 	background: #ed1849;
 	background-size: cover;
 }
@@ -138,11 +185,4 @@ footer {
 	height: 600px;
 	position: relative;
 }
-.clearfix:after {
-	display: block;
-	content: ".";
-	clear: both;
-	visibility: hidden;
-	font-size: 0;
-	height: 0;
-}
+
