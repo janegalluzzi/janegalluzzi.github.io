@@ -31,17 +31,39 @@ media queries*/
 
 body {
 	background: #ed1849;
+	font-size:20px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 	letter-spacing: 1px;
+	text-align:center;
 	word-spacing: 1px;
 }
+header{
+	position: fixed;
+	top: 20px;
+	width: 100%;
+	left: 0;
+	z-index: 3;
+}
 
+header img {
+	float:left;
+	width:10em;
+}
+
+nav{
+	background-color: #ed1849;
+	float:right;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: .75em;
+}
 h1	{
 	font-family: 'Fredericka the Great', cursive;
-	font-size: 50px;
+	font-size: 2.5em;
 	line-height: 1.5em;
-	text-align: center;
 	color: white;
 	padding: .5em;
 }
@@ -53,7 +75,6 @@ h2	{
 	line-height: 1.5em;
 	letter-spacing: 3px;
 	word-spacing: 1px;
-	text-align: center;
 	color: white;
 	background-size: cover;
 }
@@ -61,29 +82,9 @@ h2	{
 h4	{
 	text-align: center;
 }
-
-header{
-	position: fixed;
-	top: 20px;
-	width: 100%;
-	left: 0;
-	z-index: 3;
+p {
+	text-align:left;
 }
-
-header img {
-	float:left;
-}
-
-nav{
-/*	background-color: #ed1849;	*/
-	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
-	font-size: 1em;
-	text-transform: uppercase;
-	text-align: right;
-	padding: 15px;
-}
-
 a {
 	background-color: #ed1849;
 	color: white;
@@ -173,16 +174,13 @@ footer {
 	background-size: cover;
 }
 
-#post1, #post2, #post3 {
-	float: left;
-	padding: 10px;
-	margin: 10px;
-}
-
 #hero {
 	background: url("../images/3girls.jpg") no-repeat center center fixed;
 	background-size: cover;
 	height: 600px;
 	position: relative;
 }
-
+.wrapper {
+	max-width:40em;
+	margin:auto;
+}
